@@ -22,25 +22,16 @@ Nossa solução é dividida em módulos principais para uma gestão 360° do tra
   * **Geofencing e Alertas:** Envia notificações automáticas para motoristas e gestores em caso de desvios de rota ou chegada/partida de pontos predefinidos.
   * **Avaliação de Desempenho do Motorista:** Monitora e pontua padrões de direção (velocidade, frenagem, aceleração) para promover a segurança e a economia.
 
-### 3\. Analytics e Relatórios
 
-  * **Painel de Gestão (Dashboard):** Visão unificada em tempo real de toda a operação (veículos ativos, viagens pendentes, *status* da frota).
-  * **Relatórios de Custo por Viagem/Rota:** Ferramentas para medir o custo exato por colaborador e por rota, auxiliando na tomada de decisão e no planejamento orçamentário.
-  * **Métricas de Sustentabilidade:** Relatórios sobre redução de quilometragem e estimativa de diminuição de emissões de $\text{CO}_2$.
 
 -----
 
 ## 🛠️ Tecnologias Utilizadas
 
 Este projeto foi construído utilizando as seguintes tecnologias:
-
-| Categoria | Tecnologia | Uso no Projeto |
-| :--- | :--- | :--- |
-| **Frontend (Web)** | React.js / Vue.js | Interface de Gestores (Dashboard) e Agendamento |
-| **Backend (API)** | Node.js (Express) / Python (Django) | Lógica de Negócio, Autenticação e Processamento de Dados |
-| **Banco de Dados** | PostgreSQL (ou MongoDB) | Armazenamento de dados de usuários, veículos e históricos de viagem |
-| **Geolocalização** | Google Maps API / OpenStreetMap (OSRM) | Roteamento, Mapeamento em Tempo Real e Cálculo de Distâncias |
-| **Cloud Computing** | AWS (EC2, Lambda) / Google Cloud Platform (GCP) | Hospedagem da aplicação e escalabilidade |
+- HTML 
+- CSS
+- JAVASCRIPT 
 
 -----
 
@@ -48,11 +39,7 @@ Este projeto foi construído utilizando as seguintes tecnologias:
 
 Siga os passos abaixo para rodar o projeto localmente:
 
-### Pré-requisitos
 
-  * Node.js (versão 18+)
-  * Docker (recomendado para rodar o banco de dados)
-  * Chaves de API de Geolocalização (ex: Google Maps)
 
 ### 1\. Clonar o Repositório
 
