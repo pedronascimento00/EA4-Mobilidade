@@ -1,0 +1,192 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* CORES PRINCIPAIS */
+:root {
+    --primary-color: #0056b3; /* Azul Forte, sugestão para o logo/CTA */
+    --secondary-color: #00c080; /* Verde, para destaque ou economia */
+    --text-dark: #333;
+    --text-light: #fff;
+    --bg-light: #f9f9f9;
+}
+
+/* HEADER */
+.header {
+    background: var(--text-light);
+    color: var(--text-dark);
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.header nav a {
+    color: var(--text-dark);
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 8px 15px;
+    transition: color 0.3s;
+}
+
+.header nav a:hover {
+    color: var(--primary-color);
+}
+
+.btn-contato {
+    background-color: var(--primary-color);
+    color: var(--text-light) !important;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn-contato:hover {
+    background-color: #004494;
+}
+
+/* HERO SECTION (DESTAQUE) */
+.hero {
+    background: linear-gradient(135deg, var(--primary-color), #007bff);
+    color: var(--text-light);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-ctas a {
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: 700;
+    margin: 0 10px;
+    transition: opacity 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    border: 2px solid var(--secondary-color);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--text-light);
+    border: 2px solid var(--text-light);
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    opacity: 0.8;
+}
+
+/* SEÇÃO PILARES */
+.pilares {
+    padding: 60px 0;
+    background-color: var(--bg-light);
+}
+
+.pilares .container {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+}
+
+.pilar-item {
+    flex: 1;
+    padding: 30px;
+    background: var(--text-light);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.pilar-item .icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.pilar-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+.footer {
+    background: var(--text-dark);
+    color: #bbb;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVIDADE BÁSICA */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+    }
+    .header nav {
+        margin-top: 10px;
+    }
+    .header nav a {
+        margin: 0 5px;
+        padding: 5px 10px;
+    }
+    .hero h2 {
+        font-size: 2rem;
+    }
+    .hero-ctas {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hero-ctas a {
+        margin: 0;
+    }
+    .pilares .container {
+        flex-direction: column;
+    }
+    .pilar-item {
+        margin-bottom: 20px;
+    }
+}
